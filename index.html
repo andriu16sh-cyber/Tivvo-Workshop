@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tivvo Workshop — project by Andrii Sharov</title>
+  <meta name="description" content="Screenshots, gameplay video and project details for Tivvo Workshop, an offline Android children's game offered with its editable source.">
+  <meta name="theme-color" content="#342a46">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23342a46'/%3E%3Cpath d='M8 9h16v5h-5v11h-6V14H8z' fill='%23f2ca69'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-text="skip">Skip to content</a>
+  <header class="masthead wrap">
+    <a class="wordmark" href="#main">tivvo<span>workshop</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#screenshots" data-text="navScreens">Screenshots</a>
+      <a href="#video" data-text="navVideo">Video</a>
+      <a href="#project" data-text="navProject">Project details</a>
+    </nav>
+    <div class="language-switch" role="group" aria-label="Website language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <span aria-hidden="true">/</span>
+      <button type="button" data-lang="uk" aria-pressed="false">УКР</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="intro wrap">
+      <div class="intro-heading">
+        <div>
+          <p class="byline" data-text="byline">Andrii Sharov · Android game project</p>
+          <h1>Tivvo <em>Workshop</em><span class="title-stop" aria-hidden="true">.</span></h1>
+          <p class="subtitle" data-text="subtitle">A children’s game for Android.</p>
+        </div>
+        <div class="intro-note">
+          <p data-text="intro">I’m offering Tivvo Workshop with its editable source and game assets. This page shows the game and explains what’s included in the sale.</p>
+          <a class="inline-link" href="#video"><span class="tiny-play" aria-hidden="true">▶</span><span data-text="watch">Watch the gameplay</span></a>
+        </div>
+      </div>
+      <figure class="opening-frame">
+        <button class="image-button" type="button" data-image="yard-1" aria-label="Enlarge the lakeside screenshot">
+          <img src="images/sale-yard-1.png" width="1280" height="720" alt="Tivvo in the lakeside harbour, with a house, sailing boats and a lighthouse" fetchpriority="high">
+        </button>
+        <figcaption><span data-text="openingCaption">The lakeside location · game version 1.0.0</span><span data-text="enlargeHint">Click a screenshot to see it full size</span></figcaption>
+      </figure>
+      <p class="game-summary" data-text="gameSummary">The game has nine mini-games with 162 levels, 30 separate mathematics stages, six locations, a shop, care activities and local save progress. It works offline, without ads or in-app payments.</p>
+    </section>
+
+    <section id="video" class="film-section">
+      <div class="wrap film-layout">
+        <div class="film-copy">
+          <span class="section-number" aria-hidden="true">01</span>
+          <h2 data-text="videoTitle">Gameplay</h2>
+          <p data-text="videoIntro">The video gives a better idea of the pace and interactions than screenshots alone.</p>
+          <a class="inline-link" href="https://www.youtube.com/watch?v=9SmVIRaVvag" target="_blank" rel="noopener noreferrer"><span data-text="youtube">Watch on YouTube</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="video-frame" id="videoFrame">
+          <button class="video-poster" id="playVideo" type="button" aria-label="Play the gameplay video">
+            <img src="images/sale-games.png" width="1280" height="720" alt="" loading="lazy">
+            <span class="video-shade"><span class="play-circle" aria-hidden="true">▶</span><span data-text="playVideo">Play video</span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots" class="wrap chapter places-section">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 data-text="placesTitle">Around Tivvo’s home</h2></div>
+      <div class="places-layout">
+        <aside class="places-sidebar">
+          <p data-text="placesIntro">There are six outdoor locations. The house changes with the location, including the room inside.</p>
+          <div class="location-picker" id="locationPicker" role="group" aria-label="Choose a location"></div>
+        </aside>
+        <figure class="location-frame">
+          <button class="image-button" id="locationZoom" type="button" data-image="yard-0" aria-label="Enlarge the selected location"><img id="locationImage" src="images/sale-yard-0.png" width="1280" height="720" alt="Meadow garden" loading="lazy"></button>
+          <figcaption id="locationName">Meadow garden</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap chapter games-section">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 data-text="gamesTitle">The mini-games</h2></div>
+      <div class="games-overview">
+        <button class="image-button" type="button" data-image="games" aria-label="Enlarge the mini-game menu"><img src="images/sale-games.png" width="1280" height="720" alt="All nine mini-games in the game menu" loading="lazy"></button>
+        <div class="games-copy"><p data-text="gamesIntro">Each mini-game has 18 levels. Players earn coins and use them for Tivvo’s clothes, decorations and new locations.</p><ol id="gameNames"></ol><p class="math-note" data-text="mathNote">Mathematics has its own 30 stages, in addition to the mini-game levels.</p></div>
+      </div>
+      <div class="gallery three-up" id="gameGallery"></div>
+      <details class="extra-photos"><summary data-text="moreGames">More mini-game screenshots</summary><div class="gallery three-up" id="extraGameGallery"></div></details>
+    </section>
+
+    <section class="home-section">
+      <div class="wrap chapter">
+        <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><h2 data-text="personalTitle">Clothes, rooms and time with Tivvo</h2></div>
+        <p class="section-intro" data-text="personalIntro">Players can try items on Tivvo before buying them, arrange decorations in the yard and room, and work through twelve care sessions. Purchases and progress stay in the local save.</p>
+        <div class="gallery personal-gallery" id="personalGallery"></div>
+        <details class="extra-photos"><summary data-text="moreHome">Other rooms and settings</summary><div class="gallery three-up" id="extraPersonalGallery"></div></details>
+        <p class="capture-note" data-text="captureNote">These are real 1.0.0 game captures with the normal starting balance of 25 coins. Locations were unlocked temporarily for the screenshots. The game interface shown here is English.</p>
+      </div>
+    </section>
+
+    <section id="project" class="wrap chapter project-section">
+      <div class="section-heading"><span class="section-number" aria-hidden="true">05</span><h2 data-text="projectTitle">What I’m selling</h2></div>
+      <p class="section-intro" data-text="projectIntro">I chose to sell the editable project rather than publish and run the game myself. It has not been publicly released and has no verified audience or revenue.</p>
+      <div class="handover-layout">
+        <div class="package"><h3 data-text="packageTitle">Files included</h3><ul id="packageItems"></ul><p class="key-note" data-text="keyNote">The private Android signing key stays separate until an agreed secure handover. No store, email or social media account is included.</p></div>
+        <div class="technical"><h3 data-text="techTitle">Technical details</h3><dl id="techSpecs"></dl></div>
+      </div>
+      <div class="project-notes">
+        <details open><summary data-text="statusTitle">Current installation issue</summary><div class="detail-body"><p class="installation-note" data-text="protectNote">Google Play Protect has reportedly marked the APK harmful on a Samsung Galaxy S24. I haven’t confirmed the exact warning or its cause yet. The APK’s signature is valid and it requests no permissions, but those checks do not prove safety. This issue is unresolved; do not bypass the warning. There is no APK download on this page.</p></div></details>
+        <details><summary data-text="qaTitle">Testing and limitations</summary><div class="detail-body"><p data-text="qaBody">The package includes the actual test report: release builds, core-rule tests, emulator gameplay, a save-preserving update, and layout and language checks. This is not a guarantee for every physical device.</p><ul id="qaLimits"></ul></div></details>
+        <details><summary data-text="rightsTitle">Development and rights</summary><div class="detail-body"><p data-text="rightsBody">AI tools helped with the code, artwork and audio. The available art sources, audio generators, development notes, prompts and asset/licence records are included. A supplied music recording without documented commercial permission was removed.</p><p data-text="agreementBody">The sale agreement will need to define which rights I can transfer. Exclusive copyright in AI output and registered trademark rights are not claimed.</p></div></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer"><span>Tivvo Workshop · Andrii Sharov</span><span data-text="footerNote">For sale as an editable Android project</span></footer>
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxTitle">
+    <div class="lightbox-top"><h2 id="lightboxTitle">Screenshot</h2><button type="button" id="closeLightbox" aria-label="Close screenshot">×</button></div>
+    <img id="lightboxImage" src="images/sale-yard-0.png" width="1280" height="720" alt="">
+    <div class="lightbox-bottom"><button type="button" id="previousImage" aria-label="Previous screenshot">←</button><span id="imageCounter"></span><button type="button" id="nextImage" aria-label="Next screenshot">→</button></div>
+  </dialog>
+  <script src="site.js"></script>
+</body>
+</html>
